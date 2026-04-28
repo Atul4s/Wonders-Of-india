@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Words Of Wonder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="
+    https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+    " rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .contact-container {
+        padding: 50px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh;
+      }
+      .contact-box {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        width: 100%;
+        max-width: 500px;
+      }
+      .contact-box h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #fff;
+      }
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        font-family: sans-serif;
+        background: rgba(255,255,255,0.9);
+      }
+      .contact-form textarea {
+        resize: none;
+        height: 120px;
+      }
+      .contact-form button {
+        background-color: #ff6b6b;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: 0.3s;
+        font-family: 'Mouse Memoirs', sans-serif;
+      }
+      .contact-form button:hover {
+        background-color: #ff4757;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-scroll-container>   
+    <main class="homee" >
+      <section class="view-one" style="height: auto; min-height: unset; padding-bottom: 20px;">
+        <div class="nav">
+          <h1 class="animate__animated animate__swing">Wonders</h1>
+          <div class="navbar">
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="places.html">places</a></li>
+              <li><a href="services.html">services</a></li>
+            </ul>
+          </div>
+
+          <button class="btn" onclick="window.location.href='contact.html'">Contact us</button>
+          <img class="menu" src="./images/menu.png" alt="" />
+        </div>
+      </section>
+
+      <section class="contact-container">
+        <div class="contact-box animate__animated animate__fadeInUp">
+          <h2>Get in Touch</h2>
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('Message Sent!');">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="view-five" >
+        <!-- <footer>
+          <p>Developed by Atul
+          <a href="https://github.com/Atul4s">Github</a></p>
+        </footer> -->
+      </section>
+    </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script>
+      const scroller = new LocomotiveScroll({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+        smartphone: { smooth: true },
+        tablet: { smooth: true },
+        lerp: 0.1,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Places - Words Of Wonder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="
+    https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+    " rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+  <body>
+    <div data-scroll-container>   
+    <main class="homee places-page" >
+      <section class="view-one">
+        <div class="nav">
+          <h1 class="animate__animated animate__swing">Wonders</h1>
+          <div class="navbar">
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="places.html">places</a></li>
+              <li><a href="services.html">services</a></li>
+            </ul>
+          </div>
+
+          <button class="btn" onclick="window.location.href='contact.html'">Contact us</button>
+          <img class="menu" src="./images/menu.png" alt="" />
+        </div>
+      </section>
+
+      <section class="places-hero">
+        <h1 class="animate__animated animate__fadeInUp">Mountain Wonders of <span>India</span></h1>
+        <p class="animate__animated animate__fadeInUp animate__delay-1s">Explore the majestic peaks, serene valleys, and breathtaking landscapes of India's most popular hill stations.</p>
+      </section>
+
+      <section class="places-grid-container">
+        <div class="places-grid">
+          <!-- Card 1 -->
+          <div class="place-card" data-place="leh">
+            <img src="./images/Leh-Ladakh.jpeg" alt="Leh Ladakh" />
+            <div class="card-overlay">
+              <h2>Leh Ladakh</h2>
+              <button class="view-btn">View Details</button>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="place-card" data-place="manali">
+            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=800&auto=format&fit=crop" alt="Manali" />
+            <div class="card-overlay">
+              <h2>Manali</h2>
+              <button class="view-btn">View Details</button>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="place-card" data-place="shimla">
+            <img src="https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?q=80&w=800&auto=format&fit=crop" alt="Shimla" />
+            <div class="card-overlay">
+              <h2>Shimla</h2>
+              <button class="view-btn">View Details</button>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="place-card" data-place="darjeeling">
+            <img src="./images/pexels-sayan-samanta-1460859263-26764486.jpg" alt="Darjeeling" />
+            <div class="card-overlay">
+              <h2>Darjeeling</h2>
+              <button class="view-btn">View Details</button>
+            </div>
+          </div>
+           <!-- Card 5 -->
+           <div class="place-card" data-place="auli">
+            <img src="./images/auli.webp" alt="Auli" />
+            <div class="card-overlay">
+              <h2>Auli</h2>
+              <button class="view-btn">View Details</button>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="place-card" data-place="munnar">
+            <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?q=80&w=800&auto=format&fit=crop" alt="Munnar" />
+            <div class="card-overlay">
+              <h2>Munnar</h2>
+              <button class="view-btn">View Details</button>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="place-card" data-place="nainital">
+            <img src="./images/nanitaal.jpeg" alt="Nainital" />
+            <div class="card-overlay">
+              <h2>Nainital</h2>
+              <button class="view-btn">View Details</button>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="place-card" data-place="rishikesh">
+            <img src="./images/rishikesh-3715497.webp" alt="Rishikesh" />
+            <div class="card-overlay">
+              <h2>Rishikesh</h2>
+              <button class="view-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view-five" >
+        <!-- <footer>
+          <p>Developed by Atul
+          <a href="https://github.com/Atul4s">Github</a></p>
+        </footer> -->
+      </section>
+    </main>
+    </div>
+
+    <!-- Modal Overlay -->
+    <div class="modal-overlay" id="placeModal">
+      <div class="modal-content">
+        <button class="close-btn" id="closeModal">&times;</button>
+        <div class="modal-body">
+          <img id="modalImg" src="" alt="" />
+          <div class="modal-text">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDesc"></p>
+            <div class="modal-highlights">
+              <span id="modalTime"></span>
+              <span id="modalAttractions"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="places.js"></script>
+  </body>
+</html>

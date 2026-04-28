@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Words Of Wonder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="
+    https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+    " rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+  <body>
+    <div data-scroll-container>   
+    <main class="homee services-page" >
+      <section class="view-one">
+        <div class="nav">
+          <h1 class="animate__animated animate__swing">Wonders</h1>
+          <div class="navbar">
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="places.html">places</a></li>
+              <li><a href="services.html">services</a></li>
+            </ul>
+          </div>
+
+          <button class="btn" onclick="window.location.href='contact.html'">Contact us</button>
+          <img class="menu" src="./images/menu.png" alt="" />
+        </div>
+      </section>
+
+      <section class="places-hero">
+        <h1 class="animate__animated animate__fadeInUp">Our Premium <span>Services</span></h1>
+        <p class="animate__animated animate__fadeInUp animate__delay-1s">We provide end-to-end travel solutions to make your journey unforgettable and hassle-free.</p>
+      </section>
+
+      <section class="places-grid-container">
+        <div class="places-grid">
+          <!-- Service Card 1 -->
+          <div class="place-card">
+            <img src="https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?q=80&w=800&auto=format&fit=crop" alt="Hotel Booking" />
+            <div class="card-overlay">
+              <h2>Luxury Stays</h2>
+              <p style="color: white; padding: 0 10px; text-align: center; font-family: sans-serif; font-size: 14px;">Book the best hotels and resorts at exclusive prices.</p>
+            </div>
+          </div>
+          <!-- Service Card 2 -->
+          <div class="place-card">
+            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800&auto=format&fit=crop" alt="Flight Booking" />
+            <div class="card-overlay">
+              <h2>Flight Booking</h2>
+              <p style="color: white; padding: 0 10px; text-align: center; font-family: sans-serif; font-size: 14px;">Hassle-free flight ticketing with the best global airlines.</p>
+            </div>
+          </div>
+          <!-- Service Card 3 -->
+          <div class="place-card">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=800&auto=format&fit=crop" alt="Tour Packages" />
+            <div class="card-overlay">
+              <h2>Guided Tours</h2>
+              <p style="color: white; padding: 0 10px; text-align: center; font-family: sans-serif; font-size: 14px;">Expert-led travel itineraries for an immersive experience.</p>
+            </div>
+          </div>
+          <!-- Service Card 4 -->
+          <div class="place-card">
+            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop" alt="Transport" />
+            <div class="card-overlay">
+              <h2>Transport</h2>
+              <p style="color: white; padding: 0 10px; text-align: center; font-family: sans-serif; font-size: 14px;">Comfortable cabs, buses, and train reservations.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view-five" >
+        <!-- <footer>
+          <p>Developed by Atul
+          <a href="https://github.com/Atul4s">Github</a></p>
+        </footer> -->
+      </section>
+    </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script>
+      const scroller = new LocomotiveScroll({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+        smartphone: { smooth: true },
+        tablet: { smooth: true },
+        lerp: 0.1,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,763 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Delius&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  padding-top: 1rem;
+}
+
+.view-one {
+  padding: 1rem 5rem;
+}
+.view-one h1 {
+  color: black;
+  font-family: "Mouse Memoirs", serif;
+  font-weight: 100;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px #ababab;
+}
+.view-one .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.view-one .nav .nav-links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.view-one .nav .nav-links .nav-links,
+.view-one .nav .nav-links li,
+.view-one .nav .nav-links a {
+  list-style: none;
+  padding: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline;
+  text-decoration: none;
+  color: black;
+  font-family: "DM Serif Text", serif;
+  font-weight: 10;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+.view-one .nav .btn {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  padding: 0.5em 0.7em;
+  border-radius: 2rem;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  font-family: "Mouse Memoirs", serif;
+}
+.view-one .nav .btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.view-two .left-view {
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.view-two .left-view h1 {
+  color: black;
+  font-family: "Delius", serif;
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+.view-two .left-view h1 span {
+  opacity: 0.3;
+  font-weight: 100;
+}
+.view-two .left-view p {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: "Playfair Display", serif;
+}
+.view-two .primary-btn {
+  border: 2px solid #000;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  padding: 8px 1.1em;
+  border-radius: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  font-family: "Delius", serif;
+}
+.view-two .primary-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+@media (max-width: 992px) {
+  .view-one {
+    padding: 1rem 1rem;
+  }
+  .view-one .navbar {
+    display: none;
+  }
+  .view-one h1 {
+    color: black;
+    font-family: "Mouse Memoirs", serif;
+    font-weight: 100;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px #ababab;
+  }
+  .view-one .menu {
+    width: 40px;
+    height: 40px;
+  }
+  .view-one .btn {
+    display: none;
+  }
+  .grid-view {
+    display: grid;
+    gap: 5px;
+    padding: 0.5rem;
+    grid-template-areas: "a b" "a b" "a b" "a c" "a c" "a c";
+  }
+  .grid-view .img-1 {
+    grid-area: a;
+    width: 100%;
+    height: 80%;
+    margin-top: 2.5rem;
+    aspect-ratio: 9/16;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  }
+  .grid-view .img-2 {
+    grid-area: b;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  }
+  .grid-view .img-3 {
+    grid-area: c;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 2/1;
+    -o-object-position: 40% 20%;
+       object-position: 40% 20%;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  }
+  .grid-view img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  .view-three .top-desti {
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .view-three .top-desti h1 {
+    color: black;
+    font-family: "Delius", serif;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 0.1rem;
+  }
+  .view-three .img-raw {
+    width: 100%;
+    display: inline-block;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 1rem 1rem;
+  }
+  .view-three .img-raw .imgt {
+    width: 80%;
+    aspect-ratio: 1/1;
+    margin: 0.5rem;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  .view-four {
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .view-four .hstory {
+    color: black;
+    font-family: "Mouse Memoirs", serif;
+    font-weight: 100;
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-shadow: 1px 1px 1px #ababab;
+  }
+  .view-four .story {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .view-four .left-story {
+    width: 100%;
+    padding: 1rem;
+  }
+  .view-four .left-story h2 {
+    color: black;
+    font-family: "Delius", serif;
+    font-size: 2rem;
+    font-weight: lighter;
+    margin: 1rem 1rem;
+    width: 100%;
+  }
+  .view-four .left-story img {
+    width: 100%;
+    aspect-ratio: 2/1;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+    animation-range: entry 500px;
+  }
+  .view-four .left-story p {
+    font-weight: 100;
+    margin-left: 1rem;
+    width: 91%;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    line-height: 1.4;
+    font-family: "Playfair Display", serif;
+  }
+  .view-four .left-story .checkbtn {
+    border: 2px solid #000;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    padding: 8px 1.1em;
+    border-radius: 3rem;
+    font-weight: 400;
+    margin-left: 1rem;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    font-family: "Delius", serif;
+  }
+  .view-four .left-story .checkbtn:hover {
+    background: #fff;
+    color: #000;
+  }
+  .view-four .cont-raw {
+    width: 100%;
+    display: inline-block;
+    overflow: auto;
+    white-space: wrap;
+    padding: 1rem 1rem;
+  }
+  .view-four .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  .view-four .card {
+    width: 100%;
+    background: white;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem 1rem;
+  }
+  .view-four .card img {
+    width: 250px;
+    height: 100%;
+    aspect-ratio: 1/1;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+    border: dashed rgb(225, 167, 167);
+  }
+  .view-four .card-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1px;
+    padding: 0.5rem;
+  }
+  .view-four .date {
+    color: #a1a1a1;
+    font-size: 16px;
+  }
+  .view-four .title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+    font-family: "Delius", serif;
+    width: 100%;
+    font-weight: bold;
+  }
+  .view-four .description {
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (min-width: 993px) {
+  .menu {
+    display: none;
+  }
+  .view-two {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .view-two .left-view {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 90%;
+    padding: 3rem;
+  }
+  .view-two .left-view h1 {
+    color: black;
+    font-family: "Delius", serif;
+    font-size: 6rem;
+    line-height: 1.2;
+  }
+  .right-view {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  .grid-view {
+    display: grid;
+    padding: 2rem;
+    gap: 1rem;
+    grid-template-areas: "a b" "a b" "a b" "a c" "a c" "a c";
+  }
+  .grid-view .img-1 {
+    grid-area: a;
+    width: 100%;
+    height: 80%;
+    margin-top: 2.5rem;
+    aspect-ratio: 9/16;
+  }
+  .grid-view .img-2 {
+    grid-area: b;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+  }
+  .grid-view .img-3 {
+    grid-area: c;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 2/1;
+    -o-object-position: 40% 20%;
+       object-position: 40% 20%;
+  }
+  .grid-view img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+    box-shadow: rgb(17, 31, 24) 0px 48px 100px 5px;
+  }
+  .view-three .top-desti {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .view-three .top-desti h1 {
+    color: black;
+    font-family: "Delius", serif;
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+  .view-three .top-desti .img-raw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .view-three .top-desti .img-raw .imgt {
+    width: 20%;
+    margin-top: 2.5rem;
+    aspect-ratio: 1/1;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  .view-four .hstory {
+    color: black;
+    font-family: "Mouse Memoirs", serif;
+    font-weight: 100;
+    font-size: 4rem;
+    padding: 2rem;
+    text-shadow: 1px 1px 1px #ababab;
+  }
+  .view-four .story {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .view-four .left-story {
+    width: 100%;
+    padding: 1rem;
+  }
+  .view-four .left-story h2 {
+    color: black;
+    font-family: "Delius", serif;
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-left: 1rem;
+    margin: 1rem 1rem;
+  }
+  .view-four .left-story img {
+    width: 90%;
+    margin-left: 1rem;
+    aspect-ratio: 2/1;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+    background-color: aqua;
+  }
+  .view-four .left-story p {
+    font-weight: 100;
+    margin-left: 1rem;
+    width: 91%;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    line-height: 1.4;
+    font-family: "Playfair Display", serif;
+  }
+  .view-four .left-story .checkbtn {
+    border: 2px solid #000;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    padding: 8px 1.1em;
+    border-radius: 3rem;
+    font-weight: 400;
+    margin-left: 1rem;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    font-family: "Delius", serif;
+  }
+  .view-four .left-story .checkbtn:hover {
+    background: #fff;
+    color: #000;
+  }
+  .view-four .container {
+    width: 100%;
+    padding: 1rem;
+  }
+  .view-four .card {
+    width: 100%;
+    display: flex;
+    background: white;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    margin-right: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .view-four .card img {
+    width: 190px;
+    border-radius: 16px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    aspect-ratio: 1/1;
+    margin-right: 15px;
+    border: dashed rgba(10, 8, 8, 0.386);
+  }
+  .view-four .card-content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+    padding: 1rem;
+  }
+  .view-four .date {
+    color: #a1a1a1;
+    font-size: 16px;
+  }
+  .view-four .title {
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    font-family: "Delius", serif;
+    font-weight: bold;
+  }
+  .view-four .description {
+    font-size: 20px;
+    color: #555;
+  }
+}
+.view-five {
+  margin-bottom: 1rem;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+footer {
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 1px #ababab;
+  text-align: center;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  margin: 2rem;
+  font-family: "Delius", serif;
+}
+
+/* Places Page Specific Styles */
+.places-hero {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.places-hero h1 {
+  color: black;
+  font-family: "Delius", serif;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.places-hero h1 span {
+  opacity: 0.5;
+}
+.places-hero p {
+  color: #333;
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.places-grid-container {
+  padding: 2rem 5rem;
+}
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.place-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  aspect-ratio: 4/5;
+}
+.place-card:hover {
+  transform: translateY(-10px);
+}
+.place-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.place-card:hover img {
+  transform: scale(1.1);
+}
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 1rem 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.card-overlay h2 {
+  font-family: "Delius", serif;
+  font-size: 2rem;
+  margin: 0;
+}
+.view-btn {
+  background: white;
+  color: black;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-family: "Mouse Memoirs", serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+.place-card:hover .view-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-content {
+  background: white;
+  color: black;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+.modal-overlay.active .modal-content {
+  transform: scale(1);
+}
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transition: background 0.3s;
+}
+.close-btn:hover {
+  background: black;
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+}
+.modal-body img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.modal-text {
+  padding: 2rem;
+}
+.modal-text h2 {
+  font-family: "Delius", serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.modal-text p {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+.modal-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Mouse Memoirs", serif;
+  font-size: 1.4rem;
+  color: #555;
+}
+@media (min-width: 768px) {
+  .modal-body {
+    flex-direction: row;
+  }
+  .modal-body img {
+    width: 40%;
+    height: auto;
+  }
+  .modal-text {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .places-grid-container {
+    padding: 2rem 1rem;
+  }
+  .places-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.dest-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.dest-card:hover {
+  transform: scale(1.05);
+}
+/*# sourceMappingURL=style.css.map */
