@@ -10,7 +10,7 @@ const scroller = new LocomotiveScroll({
   lerp:0.1,
 });
 
-// Home Page Modal Logic
+
 const destinationsData = {
     mathura: {
         title: "Mathura, Uttar Pradesh",
@@ -66,7 +66,7 @@ if (homeModal) {
                 homeModalAttractions.innerText = data.attractions;
 
                 homeModal.classList.add("active");
-                scroller.stop(); // Pause locomotive scroll
+                scroller.stop();
             }
         });
     });

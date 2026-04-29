@@ -92,17 +92,17 @@ placeCards.forEach(card => {
             modalAttractions.innerText = data.attractions;
 
             modal.classList.add("active");
-            scroller.stop(); // Pause locomotive scroll while modal is open
+            scroller.stop(); 
         }
     });
 });
 
 closeModal.addEventListener("click", () => {
     modal.classList.remove("active");
-    scroller.start(); // Resume scroll
+    scroller.start();
 });
 
-// Close when clicking outside
+
 modal.addEventListener("click", (e) => {
     if (e.target === modal) {
         modal.classList.remove("active");
